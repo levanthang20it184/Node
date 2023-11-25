@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <section class="ftco-section">
+  <div class="container">
+    <div class="row">
+      <h1>Add Product</h1>
+      <a style="height: 40px;margin-top: 10px;margin-left: 50px;" class="btn btn-warning" href="/">Back to Product List</a>
+    </div>
+    <div class="row justify-content">
+      
+      <form action="/add" method="post">
+        <div class="col-md-5 text-center">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="col-md-5 text-center">
+          <label for="description">Description:</label>
+          <textarea name="description" rows="3" required></textarea>
+        </div>
+        <div class="col-md-5 text-center">
+          <label for="price">Price:</label>
+          <input type="number" name="price" required>
+        </div>
+        <div class="col-md-5 text-center">
+          <label for="quantity">Quantity:</label>
+          <input type="number" name="quantity" required>
+        </div>
+        <div class="col-md-5 text-center" style="padding: 30;margin-top: 20px;width: 100px;">
+          <button class="btn btn-success" type="submit">Save</button>
+        </div>
+        
+      </form>
+      
+      
+    </div>
+  </div>
+  </section>
+  
+</body>
+</html>
