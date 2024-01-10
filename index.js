@@ -3,6 +3,8 @@ require('dotenv').config({ path: '.env' })
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+// const { MongoClient } = require('mongodb');
+
 const ejs = require('ejs');
 
 const path = require('path');
@@ -16,8 +18,9 @@ const PORT = 3000;
 app.use(express.static(__dirname + "/public/"));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+const uri = 'mongodb+srv://levanthang:levanthang@cluster0.zxvqskl.mongodb.net/product?retryWrites=true&w=majority';
 
-mongoose.connect('mongodb+srv://levanthang:levanthang@cluster0.zxvqskl.mongodb.net/product?retryWrites=true&w=majority', {
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
