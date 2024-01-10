@@ -1,0 +1,89 @@
+/* public/styles.css */
+
+/* ... (Các style khác) */
+
+/* Style cho input */
+input {
+  padding: 10px; /* Kích thước padding */
+  border: 1px solid #ced4da; /* Viền xám nhạt */
+  border-radius: 5px; /* Bo góc */
+  background-color: #f8f9fa; /* Màu nền xám nhạt */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Hiệu ứng chuyển động */
+}
+
+/* Style khi focus vào input */
+input:focus {
+  border-color: #007BFF; /* Màu viền khi focus */
+  outline: 0; /* Loại bỏ đường viền màu xanh khi focus trên Firefox */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Đổ bóng khi focus */
+}
+
+/* Style cho button */
+button {
+  padding: 10px 15px; /* Kích thước padding */
+  background-color: #007BFF; /* Màu nền xanh dương */
+  color: #fff; /* Màu chữ trắng */
+  border: none; /* Không có viền */
+  border-radius: 5px; /* Bo góc */
+  cursor: pointer; /* Con trỏ khi hover */
+  transition: background-color 0.15s ease-in-out; /* Hiệu ứng chuyển động */
+}
+
+/* Style khi hover vào button */
+button:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+/* public/styles.css */
+
+/* ... (Các style khác) */
+
+/* Style cho textarea */
+textarea {
+  padding: 10px; /* Kích thước padding */
+  border: 1px solid #ced4da; /* Viền xám nhạt */
+  border-radius: 5px; /* Bo góc */
+  background-color: #f8f9fa; /* Màu nền xám nhạt */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Hiệu ứng chuyển động */
+}
+
+/* Style khi focus vào textarea */
+textarea:focus {
+  border-color: #007BFF; /* Màu viền khi focus */
+  outline: 0; /* Loại bỏ đường viền màu xanh khi focus trên Firefox */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Đổ bóng khi focus */
+}
+/* Style cho dialog */
+.dialog-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dialog-buttons {
+  text-align: right;
+}
+
+.dialog-buttons button {
+  margin-left: 10px;
+}
